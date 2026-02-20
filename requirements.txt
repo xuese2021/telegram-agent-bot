@@ -1,0 +1,12 @@
+# Telegram Bot
+python-telegram-bot>=20.0
+python-dotenv
+requests
+
+# MCP 中间层
+fastmcp>=2.0
+
+# 守护脚本（daemon.py）模拟键盘
+pyautogui>=1.0
+pyperclip>=1.8
+pygetwindow>=0.0.9

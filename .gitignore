@@ -1,0 +1,12 @@
+.env
+*.pyc
+__pycache__/
+.tg_task_*.txt
+.tg_response_*.txt
+.daemon_waiting
+.daemon_task_done
+.agent_busy
+current_task.md
+*.log
+.venv/
+venv/

@@ -1,0 +1,14 @@
+---
+description: 用户说「我要出门了」时，立即进入远程任务模式
+alwaysApply: true
+---
+
+# 远程模式触发
+
+当用户说「我要出门了」（或类似表达如「出门了」「开始远程」），立即：
+
+1. 调用 MCP `wait_for_task` 进入阻塞等待
+2. 收到任务后执行，需要放权时用 `request_approval`
+3. 完成后 `report_done`，再回到 `wait_for_task` 循环
+
+无需用户再发其他指令，自动进入永动机模式。
